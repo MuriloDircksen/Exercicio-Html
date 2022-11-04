@@ -6,11 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
+    <script>
+      function funcao1()
+      {
+      alert("Estou empregado!");
+      }
+      </script>
 </head>
 <body>
     <header>
         <h1 align="center">Curriculum Vitae</h1>
-        <h3><img src = "20160528_230450.jpg" alt="Murilo Dircksen" width="80" >Murilo Dircksen</h3> 
+        <h3><img src = "20160528_230450.jpg" alt="Murilo Dircksen" width="80" class="passo"><p input type="button" onclick="funcao1()" value="Exibir Alert">Murilo Dircksen</p></h3> 
         
         <p><b>E-Mail:</b>murilo.dircksen@gmail.com</p>
         <p><b>Endereço: </b>Servidão Manoel Evaristo dos Santos, Florianópolis, SC, Vargem Grande, 88058-008 </p>
@@ -64,8 +70,12 @@
     <br>
     <footer>
       <h4>Autor Murilo</h4>
-    </footer>
-    
+      <p id="demo"></p>
+    <script>
+        let dataHora = new Date();
+        document.getElementById('demo').innerHTML = "<h1>Hoje é " + dataHora + "</h1>";
+    </script>
+   
     
 </body>
 </html>

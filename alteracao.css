@@ -74,3 +74,16 @@
 h2 {
     text-align: center;
 }
+
+.passo{
+    background: grey;
+}
+img{
+    
+      
+    transition:.5s ease-in-out;
+}
+
+img:hover{     
+    filter:grayscale(100%);
+}
