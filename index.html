@@ -11,6 +11,15 @@
       {
       alert("Estou empregado!");
       }
+      function Enviar() {
+
+      var nome = document.getElementById("nomeid");
+
+      if (nome.value != "") {
+          alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+      }
+
+      } 
       </script>
 </head>
 <body>
@@ -31,6 +40,15 @@
         micas uma comunicação clara e habilidade em trabalhar em equipe 
         que me permitem desenvolver projetos de otimização de processos.
       </p>
+
+      <video width="320" height="240" controls="controls" autoplay="autoplay">
+        <source src="20141226_143409.mp4" type="video/mp4">
+        <object data="" width="320" height="240">
+        <embed width="320" height="240" src="20141226_143409.mp4">
+        </object>    
+        </video>
+      
+      
     </section>
     <aside>
       <p> Possui conhecimento nas ferramentas do pacote office, proativo com boa comunicação e organizado.</p>
@@ -68,6 +86,8 @@
   </tr>
 </table>
     <br>
+    
+    
     <footer>
       <h4>Autor Murilo</h4>
       <p id="demo"></p>
@@ -75,6 +95,26 @@
         let dataHora = new Date();
         document.getElementById('demo').innerHTML = "<h1>Hoje é " + dataHora + "</h1>";
     </script>
+    <br><br>
+    <form name="meu_form">
+
+      <h1>Entre em contato</h1>
+      
+      <label for="nome">Nome</label>
+      <input type="text" id="nomeid" placeholder="Seu nome" required="required" name="nome" />
+     
+      <label for="fone">Fone</label>
+      <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+      
+      <label for="email">Email</label>
+      <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+      
+      <br>
+      <textarea placeholder="Deixe sua opnião"></textarea>
+    
+      <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+    </form>
+    </footer>
    
     
 </body>
